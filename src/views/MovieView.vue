@@ -53,7 +53,7 @@
               </li>
             </ul>
           </div>
-          <div v-else>검색 결과가 없습니다.</div>
+          <div v-else class="noresult">검색 결과가 없습니다.</div>
         </div>
       </div>
       <ContactCont />
@@ -161,8 +161,8 @@ export default {
   overflow: hidden;
 }
 .top10__title {
-  font-size: 5vw;
-  font-family: var(--main_font);
+  font-size: 4vw;
+  font-family: var(--subKor_font);
   margin-bottom: 100px;
 }
 .movie__top {
@@ -191,6 +191,9 @@ export default {
 // }
 .noresult {
   color: #000;
+  font-size: 2vw;
+  text-align: center;
+  font-family: var(--subKor_font);
 }
 .movie__search {
   position: relative;
@@ -282,10 +285,11 @@ export default {
   color: #fff;
   position: absolute;
   top: -30%;
+  left: 0;
   z-index: 11111;
-  color: rgb(88, 88, 88);
+  color: #fff;
   font-size: 6vw;
-  font-family: var(--main_font);
+  font-family: var(--subKor_font);
 }
 
 .swiper-slide img {
